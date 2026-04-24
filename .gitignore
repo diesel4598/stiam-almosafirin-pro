@@ -1,0 +1,42 @@
+# Flutter related
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+/android/app/src/main/res/drawable-*/
+/android/app/src/main/res/mipmap-*/
+/android/key.properties
+/ios/.generated/
+/ios/Flutter/.last_build_id
+/ios/Flutter/App.framework
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/ServiceDefinitions.json
+/ios/Pods/
+/ios/Runner.xcworkspace/xcuserdata/
+/pubspec-lock.yaml
+
+# Testing
+/test/
+
+# IDE related
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Logs
+*.log
+
+# Misc
+.DS_Store
+.env

@@ -1,0 +1,43 @@
+name: water_tracker_mobile
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  animations: ^2.2.0
+  fl_chart: 0.71.0
+  flutter:
+    sdk: flutter
+  flutter_animate: ^4.5.2
+  flutter_localizations:
+    sdk: flutter
+  font_awesome_flutter: ^11.0.0
+  google_fonts: ^8.0.2
+  intl: ^0.20.2
+  lucide_icons_flutter: ^3.1.13
+  path: ^1.9.1
+  path_provider: 2.1.5
+  pdf: 3.11.1
+  printing: 5.13.2
+  sqflite: ^2.4.2+1
+  supabase_flutter: ^2.8.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_driver:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
