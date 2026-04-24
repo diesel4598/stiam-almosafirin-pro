@@ -209,7 +209,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       crossAxisCount: 2,
       mainAxisSpacing: 16,
       crossAxisSpacing: 16,
-      childAspectRatio: 1.2, // Increased height to prevent overflow
+      childAspectRatio: 1.2, 
       children: [
         _buildStatCard(
           'رحلات اليوم',
