@@ -5,6 +5,8 @@ import 'package:water_tracker_mobile/models/inventory_item.dart';
 import 'package:water_tracker_mobile/models/user.dart';
 import 'package:intl/intl.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' hide User;
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 
 class DatabaseHelper {
   static final DatabaseHelper _instance = DatabaseHelper._internal();
@@ -22,7 +24,10 @@ class DatabaseHelper {
   }
 
   Future<Database> _initDatabase() async {
-    String path = join(await getDatabasesPath(), 'water_tracker_v6.db');
+    if (kIsWeb) {
+      databaseFactory = databaseFactoryFfiWeb;
+    }
+    String path = kIsWeb ? 'water_tracker_v6.db' : join(await getDatabasesPath(), 'water_tracker_v6.db');
     return await openDatabase(
       path,
       version: 1,
